@@ -54,7 +54,7 @@ fox = Carro('Fox', 2013)
 lista = [audi, caminhao, moto, bmw, moto2, fox]
 
 for i in lista:
-    if i.tipo == 'Caminhão':
+    if isinstance(i, Carro):
         i.info()
         
 print(len(lista))
